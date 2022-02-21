@@ -62,19 +62,11 @@ void DisplayTreePostorder(Node* root)
 int main(){
 
     Node* root = NULL;
+    
     Insert(root, 1);
     Insert(root->left, 2);
     Insert(root->right, 3);
-    Insert(root->left->left, 4);
-    Insert(root->left->right, 5);
-    Insert(root->left->right->right, 7);
-    Insert(root->right->left, 8);
-    Insert(root->right->right, 10);
-    Insert(root->right->right->right, 12);
-    Insert(root->right->right->right->right, 14);
-    Insert(root->right->right->right->right->left, 15);
-    Insert(root->right->right->right->right->right, 16);
-    Insert(root->right->right->right->right->left->left, 17);
+    
     DisplayTreeInPreorder(root);
 
 } 
